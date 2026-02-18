@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Library Management System</h1>
+
+<!-- LOGIN -->
+<div id="loginBox">
+  <h2>Login</h2>
+  <label>Role:</label><br>
+  <input type="radio" name="role" value="admin" checked> Admin
+  <input type="radio" name="role" value="user"> User<br><br>
+
+  <input type="password" id="password" placeholder="Enter Password"><br>
+  <button onclick="login()">Login</button>
+  <p id="loginError"></p>
+</div>
+
+<!-- MAIN APP -->
+<div id="app" style="display:none;">
+
+  <h2>Add Book</h2>
+  <input type="text" id="bookName" placeholder="Book Name">
+  <input type="text" id="authorName" placeholder="Author Name">
+  <button onclick="addBook()">Add Book</button>
+  <p id="addError"></p>
+
+  <h2>Available Books</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Select</th>
+        <th>Book</th>
+        <th>Author</th>
+      </tr>
+    </thead>
+    <tbody id="bookTable"></tbody>
+  </table>
+
+  <button onclick="issueBook()">Issue Book</button>
+  <button onclick="returnBook()">Return Book</button>
+  <p id="actionMsg"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

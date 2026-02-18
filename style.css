@@ -1,0 +1,133 @@
+/* Import Modern Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Card Design */
+#loginBox, #app {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 30px;
+  width: 420px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: white;
+  transition: 0.3s ease;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: #eee;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  color: white;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Messages */
+p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ffcccc;
+  min-height: 20px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  #loginBox, #app {
+    width: 100%;
+  }
+}
